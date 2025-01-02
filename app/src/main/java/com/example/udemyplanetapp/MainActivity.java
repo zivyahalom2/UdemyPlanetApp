@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -16,7 +17,7 @@ ArrayList<Planet>planetArrayList;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-      //
+        Toast.makeText(context,"trial with GitHub",Toast.LENGTH_SHORT).show();;
 
         Init();//איתחול הפקדים
         CreatePlanetsAndAddIntoList();//בניית הרשימה
