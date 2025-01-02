@@ -1,6 +1,7 @@
 package com.example.udemyplanetapp;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.widget.ListView;
 
@@ -8,6 +9,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 ListView listView;
+Context context;
 ArrayList<Planet>planetArrayList;
   MyCustomAdapter adapter;
     @Override
@@ -48,6 +50,7 @@ ArrayList<Planet>planetArrayList;
         planetArrayList.add(Pluto);
     }
     private void Init() {
+        context=MainActivity.this;
         listView=findViewById(R.id.listview);
         planetArrayList= new ArrayList<>();
     }
